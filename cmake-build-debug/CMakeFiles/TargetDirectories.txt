@@ -1,0 +1,3 @@
+/home/siamakmirifar/Documents/Programming/C++Training/MachineLearning/HandWrittingDetection/cmake-build-debug/CMakeFiles/HandWrittingDetection.dir
+/home/siamakmirifar/Documents/Programming/C++Training/MachineLearning/HandWrittingDetection/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/siamakmirifar/Documents/Programming/C++Training/MachineLearning/HandWrittingDetection/cmake-build-debug/CMakeFiles/rebuild_cache.dir
