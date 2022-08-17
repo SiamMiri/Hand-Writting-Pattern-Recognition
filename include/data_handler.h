@@ -6,11 +6,13 @@
 #define HANDWRITTINGDETECTION_DATA_HANDLER_H
 
 #include <fstream>
+#include <iostream>
 #include "stdint.h"
 #include "data.h"
 #include <vector>
 #include <string>
 #include <map>
+#include <unordered_set>
 #include <unordered_map>
 
 class data_handler {
@@ -19,7 +21,7 @@ class data_handler {
     std::vector<data *> *test_data;
     std::vector<data *> *validation_data;
 
-    int enum_classes;
+    int num_classes;
     int feature_vector_size;
     std::map<uint8_t, int> class_map;
 
