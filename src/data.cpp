@@ -4,18 +4,63 @@
 
 #include "../include/data.h"
 
-data::data(){}
+data::data(){
+    // std::cout << "Data constructed" << std::endl;
+    this->feature_vector = new std::vector<uint8_t>;
+}
 
-void set_feature_vector(std::vector<uint8_t> *){}
-void append_to_feature_vector(uint8_t){}
-void set_label(uint8_t){}
-void set_enumerated_label(int){}
+void data::set_feature_vector(std::vector<uint8_t> *vect)
+{
+    this->feature_vector = vect;
+}
+
+void data::append_to_feature_vector(uint8_t val)
+{
+    this->feature_vector->push_back(val);
+}
+
+void data::set_label(uint8_t val)
+{
+    this->label = val;
+}
+
+void data::set_enumerated_label(int label)
+{
+    this->enum_label = label;
+}
+
+void data::set_distance(double val)
+{
+    this->distance = val;
+}
 
 // return functions
-int get_feature_vector_size(){}
-uint8_t get_label(){}
-uint8_t get_enumerated_label(){}
+int data::get_feature_vector_size()
+{
+    return this->feature_vector->size();
+}
 
-std::vector<uint8_t>* get_feature_vector(){}
+uint8_t data::get_label()
+{
+    return this->label;
+}
 
-data::~data(){}
+double data::get_distance()
+{
+    return distance;
+}
+
+uint8_t data::get_enumerated_label()
+{
+    return this->enum_label;
+}
+
+std::vector<uint8_t>* data::get_feature_vector()
+{
+    return this->feature_vector;
+}
+
+data::~data()
+{
+    // std::cout << "data deconstructed" << std::endl;
+}
